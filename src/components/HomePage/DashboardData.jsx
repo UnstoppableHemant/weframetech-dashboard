@@ -4,7 +4,7 @@ import { FaPlus } from 'react-icons/fa'
 
 const DashboardData = () => {
     return (
-        <div className="flex shrink-0 py-8 custom-scroll px-4 gap-4 text-white overflow-x-auto space-x-5 justify-between">
+        <div className="flex shrink-0 py-8 custom-scroll px-4 gap-4 text-white overflow-x-auto overflow-y-hidden space-x-5 justify-between">
             <div className="min-w-[300px]">
                 <div className="flex items-center px-4 justify-between font-bold">
                     <h3>To-Do List (24)</h3>
