@@ -3,12 +3,16 @@ import { BsPersonVideo3, BsFolderFill } from 'react-icons/bs'
 import { LiaSearchSolid } from 'react-icons/lia'
 import { TbBellFilled, TbTriangleInvertedFilled } from 'react-icons/tb'
 import { MdLibraryAddCheck } from 'react-icons/md'
+import useShowHideSidenav from '../customHooks/useShowHideSidenav'
 
 
 const Header = () => {
+    // const showHideNav = () => {
+    //     useShowHideSidenav(true)
+    // } 
     return (
-        <div className="px-6 py-4 bg-[#15132B] w-full flex items-center justify-between">
-            <div className="pl-6 pt-2 items-center xl:hidden flex gap-3">
+        <div className="sm:px-6 px-3 py-4 bg-[#15132B] w-full flex items-center justify-between">
+            <div className="sm:pl-6 pl-4 pt-2 items-center xl:hidden flex gap-3">
                 <IoMenu className='w-7 h-7 text-[#7879F1]' />
                 <p className="text-white"> weframetech </p>
             </div>
@@ -45,8 +49,8 @@ const Header = () => {
             <div className="flex gap-2 items-center border-s-2 pl-4 border-[#1E1C3A]">
                 <div className="p-4 bg-[#C4C4C4] rounded-lg"></div>
                 <span>
-                    <p className="text-white font-bold">Instructor Day</p>
-                    <p className="text-[#7879F1] text-sm">Super Admin</p>
+                    <p className="text-white sm:text-md text-sm font-bold">Instructor Day</p>
+                    <p className="text-[#7879F1] sm:text-sm text-xs">Super Admin</p>
                 </span>
                 <TbTriangleInvertedFilled className="w-3 h-3 text-[#6418C3] font-bold" />
             </div>
